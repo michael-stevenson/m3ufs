@@ -1,0 +1,9 @@
+A FUSE filesystem that mirrors the contents of an M3U playlist into
+the mount.  All operations are simply passed through to operate on
+the underlying files, and so, this is only meant to work with an M3U
+that lists local files.
+
+usage:  m3ufs.py {m3u} --mountpoint {mount} [--emulated_m3u]
+
+This might be useful to you if you would like to do file-like operations
+on a playlist, such as rsync, for example.
